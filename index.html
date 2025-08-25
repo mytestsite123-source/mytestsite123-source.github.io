@@ -3,41 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Üdvözöllek a GitHub Pages-en!</title>
+  <title>Portfólióm</title>
   <style>
+    /* Alapstílus */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f8ff; /* világoskék háttér */
-      color: #333333;           /* sötétszürke szöveg */
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+      color: #333;
+    }
+
+    /* Menü */
+    nav {
+      background-color: #ff6347;
+      padding: 15px;
       text-align: center;
-      padding-top: 50px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    h1 {
-      color: #ff6347;           /* narancssárga fejléc */
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1.1em;
     }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Szekciók */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 300px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    /* Rólam szekció */
+    #about {
+      background-color: #f9f9f9;
+    }
+
+    /* Kapcsolat szekció */
+    #contact {
+      background-color: #e0f7fa;
+    }
+
     p {
-      font-size: 1.2em;
+      font-size: 1.1em;
+      line-height: 1.5;
     }
   </style>
 </head>
-
 <body>
+
   <!-- Menü -->
-  <nav style="margin-bottom: 30px;">
-    <a href="#home" style="margin: 0 10px; text-decoration: none; color: #ff6347;">Főoldal</a>
-    <a href="#about" style="margin: 0 10px; text-decoration: none; color: #ff6347;">Rólam</a>
-    <a href="#contact" style="margin: 0 10px; text-decoration: none; color: #ff6347;">Kapcsolat</a>
+  <nav>
+    <a href="#home">Főoldal</a>
+    <a href="#about">Rólam</a>
+    <a href="#contact">Kapcsolat</a>
   </nav>
 
-  <h1 id="home">Helló, világ!</h1>
-  <p>Ez az én első GitHub Pages oldalam.</p>
-  <img src="CTA.jpg" alt="Teszt kép" width="300">
+  <!-- Főoldal -->
+  <section id="home">
+    <h1>Helló, világ!</h1>
+    <p>Ez az én első GitHub Pages portfólió oldalam.</p>
+    <img src="CTA.jpg" alt="Teszt kép">
+  </section>
 
-  <h2 id="about">Rólam</h2>
-  <p>Itt írhatod le röviden, ki vagy és mit csinálsz.</p>
+  <!-- Rólam -->
+  <section id="about">
+    <h2>Rólam</h2>
+    <p>Itt röviden bemutathatod, ki vagy és mit csinálsz. Például: webdesigner, brandstylist, márkaépítés mentor.</p>
+  </section>
 
-  <h2 id="contact">Kapcsolat</h2>
-  <p>Email: ditta.test@example.com</p>
+  <!-- Kapcsolat -->
+  <section id="contact">
+    <h2>Kapcsolat</h2>
+    <p>Email: ditta.test@example.com</p>
+    <p>Telefon: +36 30 123 4567</p>
+  </section>
+
 </body>
-
 </html>
