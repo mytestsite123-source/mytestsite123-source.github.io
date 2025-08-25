@@ -91,20 +91,21 @@
 
   <!-- Kapcsolat -->
   <section id="contact">
-    <h2>Kapcsolat</h2>
-    <p>Email: ditta.test@example.com</p>
-    <p>Telefon: +36 30 123 4567</p>
-  </section>
-<section id="contact">
+   <section id="contact">
   <h2>Kapcsolat</h2>
-  <p>Email: ditta.test@example.com</p>
-  <p>Telefon: +36 30 123 4567</p>
-  <p>
-    <a href="#" onclick="window.location.reload(true);" 
-       style="color: #ff6347; text-decoration: none; font-weight: bold;">
-       Oldal frissítése
-    </a>
-  </p>
+  <form action="https://formspree.io/f/mypageid" method="POST">
+    <input type="text" name="name" placeholder="Neved" required style="margin:5px; padding:5px; width:200px;">
+    <br>
+    <input type="email" name="email" placeholder="Email címed" required style="margin:5px; padding:5px; width:200px;">
+    <br>
+    <textarea name="message" placeholder="Üzeneted" required style="margin:5px; padding:5px; width:300px; height:100px;"></textarea>
+    <br>
+    <button type="submit" style="margin:5px; padding:10px 20px; background-color:#ff6347; color:white; border:none; cursor:pointer;">
+      Küldés
+    </button>
+  </form>
+</section>
+
 </section>
 
 </body>
