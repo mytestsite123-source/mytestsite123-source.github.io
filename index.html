@@ -65,6 +65,53 @@ p {
   font-size: 1.1em;
   line-height: 1.5;
 }
+  /* Űrlap stílus */
+form {
+  display: inline-block;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+form input,
+form textarea,
+form button {
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input,
+form textarea {
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e5533c;
+}
+
 </style>
 </head>
 <body>
