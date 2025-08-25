@@ -1,99 +1,107 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólióm</title>
-  <style>
-    html {
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólióm</title>
+<style>
+html {
   scroll-behavior: smooth;
 }
 
-    /* Alapstílus */
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      background: linear-gradient(to bottom, #f0f8ff, #ffffff);
-      color: #333;
-    }
+/* Alapstílus */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+  color: #333;
+}
 
-    /* Menü */
-    nav {
-      background-color: #ff6347;
-      padding: 15px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
+/* Menü */
+nav {
+  background-color: #ff6347;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+nav a:hover {
+  text-decoration: underline;
+}
 
-    /* Szekciók */
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    h1, h2 {
-      margin-bottom: 20px;
-    }
-    img {
-      max-width: 300px;
-      border-radius: 10px;
-      margin: 20px 0;
-    }
+/* Szekciók */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+h1, h2 {
+  margin-bottom: 20px;
+}
+img {
+  max-width: 300px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
 
-    /* Rólam szekció */
-    #about {
-      background-color: #f9f9f9;
-    }
+/* Rólam szekció */
+#about {
+  background-color: #f9f9f9;
+}
 
-    /* Kapcsolat szekció */
-    #contact {
-      background-color: #e0f7fa;
-    }
+/* Kapcsolat szekció */
+#contact {
+  background-color: #e0f7fa;
+}
 
-    p {
-      font-size: 1.1em;
-      line-height: 1.5;
-    }
-  </style>
+p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+</style>
 </head>
 <body>
 
-  <!-- Menü -->
-  <nav>
-    <a href="#home">Főoldal</a>
-    <a href="#about">Rólam</a>
-    <a href="#contact">Kapcsolat</a>
-  </nav>
+<!-- Menü -->
+<nav>
+  <a href="#home">Főoldal</a>
+  <a href="#about">Rólam</a>
+  <a href="#contact">Kapcsolat</a>
+</nav>
 
-  <!-- Főoldal -->
-  <section id="home">
-    <h1>Helló, világ!</h1>
-    <p>Ez az én első GitHub Pages portfólió oldalam.</p>
-    <img src="CTA.jpg" alt="Teszt kép">
-  </section>
+<!-- Főoldal -->
+<section id="home">
+  <h1>Helló, világ!</h1>
+  <p>Ez az én első GitHub Pages portfólió oldalam.</p>
+  <img src="CTA.jpg" alt="Teszt kép">
+</section>
 
-  <!-- Rólam -->
-  <section id="about">
-    <h2>Rólam</h2>
-    <p>Itt röviden bemutathatod, ki vagy és mit csinálsz. Például: webdesigner, brandstylist, márkaépítés mentor.</p>
-  </section>
+<!-- Rólam -->
+<section id="about">
+  <h2>Rólam</h2>
+  <p>Itt röviden bemutathatod, ki vagy és mit csinálsz. Például: webdesigner, brandstylist, márkaépítés mentor.</p>
+</section>
 
-  <!-- Kapcsolat -->
-  <section id="contact">
-   <section id="contact">
+<!-- Kapcsolat -->
+<section id="contact">
   <h2>Kapcsolat</h2>
-  <form action="https://formspree.io/f/mypageid" method="POST">
+  <p>Email: ditta.test@example.com</p>
+  <p>Telefon: +36 30 123 4567</p>
+  <p>
+    <a href="#" onclick="window.location.reload(true);" 
+       style="color: #ff6347; text-decoration: none; font-weight: bold;">
+       Oldal frissítése
+    </a>
+  </p>
+
+  <form action="https://formspree.io/f/mpwjaewp" method="POST">
     <input type="text" name="name" placeholder="Neved" required style="margin:5px; padding:5px; width:200px;">
     <br>
     <input type="email" name="email" placeholder="Email címed" required style="margin:5px; padding:5px; width:200px;">
@@ -104,8 +112,6 @@
       Küldés
     </button>
   </form>
-</section>
-
 </section>
 
 </body>
